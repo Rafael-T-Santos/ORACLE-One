@@ -94,9 +94,6 @@ footer {
     margin: 20px 0 0;
 }
 
-main {
-}
-
 form {
     margin: 40px 0;
 }
@@ -163,6 +160,14 @@ td, th {
     clear: left
 }
 
+.titulo-principal:before {
+    content: "[ ";
+}
+
+.titulo-principal:after {
+    content: "] ";
+}
+
 .principal {
     padding: 3em 0;
     width: 940px;
@@ -215,6 +220,10 @@ td, th {
 
 .itens {
     line-height: 1.5;
+}
+
+.itens::before {
+    content: "★";
 }
 
 .itens:first-child {
